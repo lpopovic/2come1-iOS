@@ -6,5 +6,6 @@ target '2come1' do
   use_frameworks!
 
   # Pods for 2come1
+  pod 'Tabman', '~> 2.6'
 
 end
