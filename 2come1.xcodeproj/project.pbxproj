@@ -26,6 +26,9 @@
 		D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */; };
 		D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */; };
 		D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */; };
+		D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */; };
+		D0FF5664240EEAA200039DB5 /* TVCNearbyUsers.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */; };
+		D0FF5666240F083200039DB5 /* NearbyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF5665240F083200039DB5 /* NearbyUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
 		D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeader.swift; sourceTree = "<group>"; };
+		D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCNearbyUsers.swift; sourceTree = "<group>"; };
+		D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCNearbyUsers.xib; sourceTree = "<group>"; };
+		D0FF5665240F083200039DB5 /* NearbyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 		D0029FE3240D497800D62A23 /* VIEW */ = {
 			isa = PBXGroup;
 			children = (
+				D0FF5660240EEA2500039DB5 /* TVCNearbyUsers */,
 				D0DCBFD2240EA78800D6E201 /* BaseHeader */,
 			);
 			path = VIEW;
@@ -199,6 +206,16 @@
 				D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */,
 			);
 			path = BaseHeader;
+			sourceTree = "<group>";
+		};
+		D0FF5660240EEA2500039DB5 /* TVCNearbyUsers */ = {
+			isa = PBXGroup;
+			children = (
+				D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */,
+				D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */,
+				D0FF5665240F083200039DB5 /* NearbyUser.swift */,
+			);
+			path = TVCNearbyUsers;
 			sourceTree = "<group>";
 		};
 		D9AF117201BD642F268F6ADB /* Pods */ = {
@@ -272,6 +289,7 @@
 			files = (
 				D0029FD9240D332B00D62A23 /* LaunchScreen.storyboard in Resources */,
 				D0DCBFC8240E9A5100D6E201 /* Localizable.strings in Resources */,
+				D0FF5664240EEAA200039DB5 /* TVCNearbyUsers.xib in Resources */,
 				D0029FD6240D332B00D62A23 /* Assets.xcassets in Resources */,
 				D0029FD4240D332900D62A23 /* Main.storyboard in Resources */,
 			);
@@ -337,6 +355,8 @@
 				D0029FCD240D332900D62A23 /* AppDelegate.swift in Sources */,
 				D073DD61240E80E5005D85B8 /* Helper+UIImage.swift in Sources */,
 				D0029FCF240D332900D62A23 /* SceneDelegate.swift in Sources */,
+				D0FF5666240F083200039DB5 /* NearbyUser.swift in Sources */,
+				D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */,
 				D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,
 				D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */,
