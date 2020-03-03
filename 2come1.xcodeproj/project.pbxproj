@@ -25,6 +25,7 @@
 		D0DCBFC8240E9A5100D6E201 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBFCA240E9A5100D6E201 /* Localizable.strings */; };
 		D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */; };
 		D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */; };
+		D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		D0DCBFCB240E9A5E00D6E201 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
 		D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		D0029FE3240D497800D62A23 /* VIEW */ = {
 			isa = PBXGroup;
 			children = (
+				D0DCBFD2240EA78800D6E201 /* BaseHeader */,
 			);
 			path = VIEW;
 			sourceTree = "<group>";
@@ -188,6 +191,14 @@
 				D073DD59240E80A2005D85B8 /* VC4.swift */,
 			);
 			path = TestVC;
+			sourceTree = "<group>";
+		};
+		D0DCBFD2240EA78800D6E201 /* BaseHeader */ = {
+			isa = PBXGroup;
+			children = (
+				D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */,
+			);
+			path = BaseHeader;
 			sourceTree = "<group>";
 		};
 		D9AF117201BD642F268F6ADB /* Pods */ = {
@@ -326,6 +337,7 @@
 				D0029FCD240D332900D62A23 /* AppDelegate.swift in Sources */,
 				D073DD61240E80E5005D85B8 /* Helper+UIImage.swift in Sources */,
 				D0029FCF240D332900D62A23 /* SceneDelegate.swift in Sources */,
+				D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,
 				D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */,
 			);
