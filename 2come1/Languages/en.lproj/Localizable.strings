@@ -9,3 +9,8 @@
   comment: "comment for user")
 */
 "KEY" = "CONTENT";
+
+"Around" = "Around";
+"Chat" = "Chat";
+"Match" = "Match";
+"Profile"  = "Profile";
