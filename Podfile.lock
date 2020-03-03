@@ -1,20 +1,24 @@
 PODS:
+  - DLRadioButton (1.4.12)
   - Pageboy (3.5.0)
   - Tabman (2.8.0):
     - Pageboy (~> 3.5.0)
 
 DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
   - Tabman (~> 2.6)
 
 SPEC REPOS:
   trunk:
+    - DLRadioButton
     - Pageboy
     - Tabman
 
 SPEC CHECKSUMS:
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   Pageboy: 3794c578aae5fcce06e90b3ed4a0ad6b807d75bb
   Tabman: f62ad94ee54a7d96e3fbab34f677d9ea4d38ece6
 
-PODFILE CHECKSUM: 59871f373aa0dd36d509225315930c1330bfd688
+PODFILE CHECKSUM: fc0d78b7e7ef4e14c1b28da9b27d25502e3cb635
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.8.3
