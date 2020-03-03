@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  2come1
+
+  Created by MacBook on 3/3/20.
+ 
+ how to set text
+  NSLocalizedString("KEY",
+  comment: "comment for user")
+*/
+"KEY" = "CONTENT";
