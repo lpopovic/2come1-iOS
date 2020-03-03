@@ -1,5 +1,5 @@
 //
-//  VC1.swift
+//  NavigationVC.swift
 //  BottomTabman
 //
 //  Created by MacBook on 3/2/20.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class VC1: BaseVC {
+class NavigationVC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
+        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .black
     }
     
 

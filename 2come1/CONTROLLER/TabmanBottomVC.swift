@@ -44,7 +44,7 @@ class TabmanBottomVC: TabmanViewController {
     func setupArrayVC() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "VC1"))
+        self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "NearbyVC"))
         
         self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "VC2"))
         

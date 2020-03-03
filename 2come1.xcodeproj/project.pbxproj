@@ -18,12 +18,13 @@
 		D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */; };
 		D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */; };
 		D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD56240E8078005D85B8 /* BaseVC.swift */; };
-		D073DD5C240E80A3005D85B8 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD58240E80A2005D85B8 /* VC1.swift */; };
 		D073DD5D240E80A3005D85B8 /* VC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD59240E80A2005D85B8 /* VC4.swift */; };
 		D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD5A240E80A3005D85B8 /* VC3.swift */; };
 		D073DD5F240E80A3005D85B8 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD5B240E80A3005D85B8 /* VC2.swift */; };
 		D073DD61240E80E5005D85B8 /* Helper+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD60240E80E5005D85B8 /* Helper+UIImage.swift */; };
 		D0DCBFC8240E9A5100D6E201 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0DCBFCA240E9A5100D6E201 /* Localizable.strings */; };
+		D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */; };
+		D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,6 @@
 		D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIColor.swift"; sourceTree = "<group>"; };
 		D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabmanBottomVC.swift; sourceTree = "<group>"; };
 		D073DD56240E8078005D85B8 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
-		D073DD58240E80A2005D85B8 /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		D073DD59240E80A2005D85B8 /* VC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC4.swift; sourceTree = "<group>"; };
 		D073DD5A240E80A3005D85B8 /* VC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 		D073DD5B240E80A3005D85B8 /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		D0DCBFC7240E9A3500D6E201 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D0DCBFC9240E9A5100D6E201 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0DCBFCB240E9A5E00D6E201 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
+		D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +124,9 @@
 		D0029FE1240D493200D62A23 /* CONTROLLER */ = {
 			isa = PBXGroup;
 			children = (
+				D0DCBFCE240EA1CC00D6E201 /* TestVC */,
 				D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */,
-				D073DD58240E80A2005D85B8 /* VC1.swift */,
-				D073DD5B240E80A3005D85B8 /* VC2.swift */,
-				D073DD5A240E80A3005D85B8 /* VC3.swift */,
-				D073DD59240E80A2005D85B8 /* VC4.swift */,
+				D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -137,6 +137,7 @@
 				D073DD60240E80E5005D85B8 /* Helper+UIImage.swift */,
 				D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */,
 				D073DD56240E8078005D85B8 /* BaseVC.swift */,
+				D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */,
 			);
 			path = EXTENSION;
 			sourceTree = "<group>";
@@ -177,6 +178,16 @@
 				D0DCBFCA240E9A5100D6E201 /* Localizable.strings */,
 			);
 			path = Languages;
+			sourceTree = "<group>";
+		};
+		D0DCBFCE240EA1CC00D6E201 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				D073DD5B240E80A3005D85B8 /* VC2.swift */,
+				D073DD5A240E80A3005D85B8 /* VC3.swift */,
+				D073DD59240E80A2005D85B8 /* VC4.swift */,
+			);
+			path = TestVC;
 			sourceTree = "<group>";
 		};
 		D9AF117201BD642F268F6ADB /* Pods */ = {
@@ -306,6 +317,8 @@
 			files = (
 				D073DD5D240E80A3005D85B8 /* VC4.swift in Sources */,
 				D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */,
+				D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */,
+				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
 				D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */,
 				D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */,
 				D073DD5F240E80A3005D85B8 /* VC2.swift in Sources */,
@@ -314,7 +327,6 @@
 				D073DD61240E80E5005D85B8 /* Helper+UIImage.swift in Sources */,
 				D0029FCF240D332900D62A23 /* SceneDelegate.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,
-				D073DD5C240E80A3005D85B8 /* VC1.swift in Sources */,
 				D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
