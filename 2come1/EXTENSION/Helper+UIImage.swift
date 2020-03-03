@@ -29,6 +29,18 @@ enum TabBarIcon {
     }
 }
 
+enum customImages {
+    case
+    jin
+    
+    var value: UIImage {
+        switch self {
+        case .jin:
+            return UIImage(named: "jin")!
+        }
+    }
+}
+
 extension UIImage {
     
     func imageWithColor(color1: UIColor) -> UIImage {
