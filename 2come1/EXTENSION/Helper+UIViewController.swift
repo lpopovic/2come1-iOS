@@ -22,3 +22,16 @@ extension UIAlertController {
         
     }
 }
+extension UIAlertAction {
+    static func createDefoultOkAction() -> UIAlertAction{
+        return UIAlertAction(title: NSLocalizedString("Ok",
+                                                      comment: "comment for user"),
+                             style: UIAlertAction.Style.default, handler: nil)
+    }
+    static func createDefaultCancelAction() -> UIAlertAction{
+        return UIAlertAction(title: NSLocalizedString("Cancel",
+                                                      comment: "comment for user"),
+                             style: UIAlertAction.Style.default,
+                             handler: nil)
+    }
+}

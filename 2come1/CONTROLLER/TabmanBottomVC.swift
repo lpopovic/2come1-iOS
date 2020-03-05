@@ -125,10 +125,7 @@ class TabmanBottomVC: TabmanViewController {
                                                               comment: "comment for user"),
                                      style: UIAlertAction.Style.default,
                                      handler: openSettings))
-        actions.append(UIAlertAction(title: NSLocalizedString("Cancel",
-                                                              comment: "comment for user"),
-                                     style: UIAlertAction.Style.default,
-                                     handler: nil))
+        actions.append(UIAlertAction.createDefaultCancelAction())
         
         UIAlertController.createCustomAlert(self,
                                             NSLocalizedString("Alert",
@@ -216,5 +213,8 @@ extension TabmanBottomVC: CLLocationManagerDelegate {
         // or there might be no GPS signal inside a building
         
         // might be a good idea to show an alert to user to ask them to walk to a place with GPS signal
+        
+        UIAlertController.createCustomAlert(self,NSLocalizedString("Alert",
+                                                                   comment: "comment for user"), error.localizedDescription, [UIAlertAction.createDefoultOkAction()])
     }
 }
