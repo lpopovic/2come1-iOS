@@ -15,6 +15,7 @@
 		D0029FD9240D332B00D62A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0029FD7240D332B00D62A23 /* LaunchScreen.storyboard */; };
 		D0029FE8240D4A4F00D62A23 /* ConstantsForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE7240D4A4F00D62A23 /* ConstantsForApp.swift */; };
 		D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */; };
+		D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */; };
 		D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */; };
 		D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */; };
 		D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD56240E8078005D85B8 /* BaseVC.swift */; };
@@ -44,6 +45,7 @@
 		D0029FDA240D332B00D62A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0029FE7240D4A4F00D62A23 /* ConstantsForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForApp.swift; sourceTree = "<group>"; };
 		D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsRestAPI.swift; sourceTree = "<group>"; };
+		D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIViewController.swift"; sourceTree = "<group>"; };
 		D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIColor.swift"; sourceTree = "<group>"; };
 		D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabmanBottomVC.swift; sourceTree = "<group>"; };
 		D073DD56240E8078005D85B8 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				D073DD60240E80E5005D85B8 /* Helper+UIImage.swift */,
 				D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */,
+				D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */,
 				D073DD56240E8078005D85B8 /* BaseVC.swift */,
 				D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */,
 			);
@@ -346,6 +349,7 @@
 			files = (
 				D073DD5D240E80A3005D85B8 /* VC4.swift in Sources */,
 				D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */,
+				D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */,
 				D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */,
 				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
 				D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */,
