@@ -22,11 +22,11 @@ class TabmanBottomVC: TabmanViewController {
     let titleBarItems :[String] = ["Around", "Chat", "Match", "Profile"]
     
     class var sharedInstance: TabmanBottomVC {
-           struct Singleton {
-               static let instance = TabmanBottomVC()
-           }
-           return Singleton.instance
-       }
+        struct Singleton {
+            static let instance = TabmanBottomVC()
+        }
+        return Singleton.instance
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class TabmanBottomVC: TabmanViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.retriveCurrentLocation), name: NSNotification.Name(CustomNotificationName.getCurrentLocation.value), object: nil)
         
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -87,7 +87,7 @@ class TabmanBottomVC: TabmanViewController {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
-   @objc func retriveCurrentLocation(){
+    @objc func retriveCurrentLocation(){
         let status = CLLocationManager.authorizationStatus()
         
         if(status == .denied || status == .restricted || !CLLocationManager.locationServicesEnabled()){
@@ -118,18 +118,23 @@ class TabmanBottomVC: TabmanViewController {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
         }
-
+        
         var actions: [UIAlertAction] = []
-        actions.append(UIAlertAction(title: "Open Settings",
-                                      style: UIAlertAction.Style.default,
-                                      handler: openSettings))
-        actions.append(UIAlertAction(title: "Cancel",
-                                      style: UIAlertAction.Style.default,
-                                      handler: nil))
-
+        
+        actions.append(UIAlertAction(title: NSLocalizedString("Open Settings",
+                                                              comment: "comment for user"),
+                                     style: UIAlertAction.Style.default,
+                                     handler: openSettings))
+        actions.append(UIAlertAction(title: NSLocalizedString("Cancel",
+                                                              comment: "comment for user"),
+                                     style: UIAlertAction.Style.default,
+                                     handler: nil))
+        
         UIAlertController.createCustomAlert(self,
-                                            "Alert",
-                                            "You need to allow location data to use some feature of app. Please modify your settings.",
+                                            NSLocalizedString("Alert",
+                                                              comment: "comment for user"),
+                                            NSLocalizedString("You need to allow location data to use some feature of app. Please modify your settings.",
+                                                              comment:"comment for user" ),
                                             actions)
     }
     
