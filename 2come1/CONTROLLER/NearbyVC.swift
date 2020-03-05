@@ -33,7 +33,7 @@ class NearbyVC: BaseVC {
         self.viewHeader.setup(NSLocalizedString("Nearby",
                                                 comment: "comment for user"), BaseColor.gold.value)
         self.viewBackground.backgroundColor = .darkGray
-        self.imageViewBackground.image = customImages.jin.value.withTintColor(.black)
+        self.imageViewBackground.image = customImages.jin.value.imageWithColor(color1: .black)
         
         self.setupForTableView()
     }
