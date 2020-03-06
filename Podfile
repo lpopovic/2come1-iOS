@@ -7,5 +7,6 @@ target '2come1' do
 
   # Pods for 2come1
   pod 'Tabman', '~> 2.6'
+  pod 'DLRadioButton', '~> 1.4'
 
 end
