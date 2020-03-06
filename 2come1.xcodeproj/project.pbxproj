@@ -16,6 +16,9 @@
 		D0029FE8240D4A4F00D62A23 /* ConstantsForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE7240D4A4F00D62A23 /* ConstantsForApp.swift */; };
 		D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */; };
 		D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */; };
+		D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF64E2411B9B600F96D2E /* MatchVC.swift */; };
+		D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */; };
+		D05AF6542411C4E700F96D2E /* TVCMatchUser.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05AF6522411C4E700F96D2E /* TVCMatchUser.xib */; };
 		D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */; };
 		D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */; };
 		D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D073DD56240E8078005D85B8 /* BaseVC.swift */; };
@@ -46,6 +49,9 @@
 		D0029FE7240D4A4F00D62A23 /* ConstantsForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForApp.swift; sourceTree = "<group>"; };
 		D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsRestAPI.swift; sourceTree = "<group>"; };
 		D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIViewController.swift"; sourceTree = "<group>"; };
+		D05AF64E2411B9B600F96D2E /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
+		D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCMatchUser.swift; sourceTree = "<group>"; };
+		D05AF6522411C4E700F96D2E /* TVCMatchUser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCMatchUser.xib; sourceTree = "<group>"; };
 		D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIColor.swift"; sourceTree = "<group>"; };
 		D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabmanBottomVC.swift; sourceTree = "<group>"; };
 		D073DD56240E8078005D85B8 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 				D0DCBFCE240EA1CC00D6E201 /* TestVC */,
 				D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */,
 				D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */,
+				D05AF64E2411B9B600F96D2E /* MatchVC.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 		D0029FE3240D497800D62A23 /* VIEW */ = {
 			isa = PBXGroup;
 			children = (
+				D05AF6502411C4AA00F96D2E /* TVCMatchUser */,
 				D0FF5660240EEA2500039DB5 /* TVCNearbyUsers */,
 				D0DCBFD2240EA78800D6E201 /* BaseHeader */,
 			);
@@ -183,6 +191,15 @@
 				D0029FD7240D332B00D62A23 /* LaunchScreen.storyboard */,
 			);
 			path = STORYBOARD;
+			sourceTree = "<group>";
+		};
+		D05AF6502411C4AA00F96D2E /* TVCMatchUser */ = {
+			isa = PBXGroup;
+			children = (
+				D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */,
+				D05AF6522411C4E700F96D2E /* TVCMatchUser.xib */,
+			);
+			path = TVCMatchUser;
 			sourceTree = "<group>";
 		};
 		D0DCBFC3240E99CD00D6E201 /* Languages */ = {
@@ -290,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05AF6542411C4E700F96D2E /* TVCMatchUser.xib in Resources */,
 				D0029FD9240D332B00D62A23 /* LaunchScreen.storyboard in Resources */,
 				D0DCBFC8240E9A5100D6E201 /* Localizable.strings in Resources */,
 				D0FF5664240EEAA200039DB5 /* TVCNearbyUsers.xib in Resources */,
@@ -349,8 +367,10 @@
 			files = (
 				D073DD5D240E80A3005D85B8 /* VC4.swift in Sources */,
 				D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */,
+				D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */,
 				D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */,
 				D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */,
+				D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */,
 				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
 				D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */,
 				D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */,

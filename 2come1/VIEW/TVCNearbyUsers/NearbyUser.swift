@@ -43,6 +43,7 @@ class NearbyUser: UIView {
         
         self.lblDescription.textAlignment = .center
         self.lblDescription.textColor = BaseColor.gold.value
+        self.lblDescription.font = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.regular)
         
         self.backgroundColor = .clear
         

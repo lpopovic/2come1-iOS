@@ -50,7 +50,7 @@ class TabmanBottomVC: TabmanViewController {
         
         self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "VC2"))
         
-        self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "VC3"))
+        self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "MatchVC"))
         
         self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "VC4"))
         self.reloadData()

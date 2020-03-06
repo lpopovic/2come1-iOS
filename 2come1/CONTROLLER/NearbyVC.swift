@@ -35,10 +35,10 @@ class NearbyVC: BaseVC {
         self.viewBackground.backgroundColor = .darkGray
         self.imageViewBackground.image = customImages.jin.value.imageWithColor(color1: .black)
         
-        self.setupForTableView()
+        self.setupUITableView()
     }
     
-    func setupForTableView() {
+    func setupUITableView() {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
