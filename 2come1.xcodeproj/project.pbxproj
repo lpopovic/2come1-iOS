@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2FE78E2EABF9D997FEBF2F00 /* Pods_2come1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F50F644004A66FEE2449D9 /* Pods_2come1.framework */; };
+		42470BBA240EFA090083840B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42470BB9240EFA090083840B /* LoginVC.swift */; };
+		42470BBC240EFA440083840B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42470BBB240EFA440083840B /* RegisterVC.swift */; };
+		42470BBE240F29380083840B /* SwipeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42470BBD240F29380083840B /* SwipeNavigationController.swift */; };
 		D0029FCD240D332900D62A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FCC240D332900D62A23 /* AppDelegate.swift */; };
 		D0029FCF240D332900D62A23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FCE240D332900D62A23 /* SceneDelegate.swift */; };
 		D0029FD4240D332900D62A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0029FD2240D332900D62A23 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42470BB9240EFA090083840B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		42470BBB240EFA440083840B /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		42470BBD240F29380083840B /* SwipeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeNavigationController.swift; sourceTree = "<group>"; };
 		5DE0FBCB99A68D3B30CB3012 /* Pods-2come1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2come1.release.xcconfig"; path = "Target Support Files/Pods-2come1/Pods-2come1.release.xcconfig"; sourceTree = "<group>"; };
 		81B11AA5A08B637913E0ED1A /* Pods-2come1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2come1.debug.xcconfig"; path = "Target Support Files/Pods-2come1/Pods-2come1.debug.xcconfig"; sourceTree = "<group>"; };
 		95F50F644004A66FEE2449D9 /* Pods_2come1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2come1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +150,8 @@
 				D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */,
 				D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */,
 				D05AF64E2411B9B600F96D2E /* MatchVC.swift */,
+				42470BB9240EFA090083840B /* LoginVC.swift */,
+				42470BBB240EFA440083840B /* RegisterVC.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 		D0029FE2240D495C00D62A23 /* EXTENSION */ = {
 			isa = PBXGroup;
 			children = (
+				42470BBD240F29380083840B /* SwipeNavigationController.swift */,
 				D073DD60240E80E5005D85B8 /* Helper+UIImage.swift */,
 				D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */,
 				D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */,
@@ -369,6 +378,7 @@
 				D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */,
 				D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */,
 				D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */,
+				42470BBE240F29380083840B /* SwipeNavigationController.swift in Sources */,
 				D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */,
 				D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */,
 				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
@@ -377,6 +387,7 @@
 				D073DD5F240E80A3005D85B8 /* VC2.swift in Sources */,
 				D0029FE8240D4A4F00D62A23 /* ConstantsForApp.swift in Sources */,
 				D0029FCD240D332900D62A23 /* AppDelegate.swift in Sources */,
+				42470BBC240EFA440083840B /* RegisterVC.swift in Sources */,
 				D073DD61240E80E5005D85B8 /* Helper+UIImage.swift in Sources */,
 				D0029FCF240D332900D62A23 /* SceneDelegate.swift in Sources */,
 				D0FF5666240F083200039DB5 /* NearbyUser.swift in Sources */,
@@ -384,6 +395,7 @@
 				D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,
 				D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */,
+				42470BBA240EFA090083840B /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
