@@ -31,12 +31,15 @@ enum TabBarIcon {
 
 enum customImages {
     case
-    jin
+    jin,
+    userAvatar
     
     var value: UIImage {
         switch self {
         case .jin:
             return UIImage(named: "jin")!
+        case .userAvatar:
+            return UIImage(named: "user-avatar")!
         }
     }
 }

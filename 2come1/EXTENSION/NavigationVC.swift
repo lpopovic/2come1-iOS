@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NavigationVC: UINavigationController {
+class NavigationVC: SwipeNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,20 @@ class NavigationVC: UINavigationController {
         self.view.backgroundColor = .black
     }
     
-
+    func showTabManScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TabmanBottomVC") as! TabmanBottomVC
+        self.pushViewController(vc,animated: true)
+        self.emptyNavigationStack()
+    }
+    func emptyNavigationStack() {
+        var navigationArray = self.viewControllers // To get all UIViewController stack as Array
+        if let vc = navigationArray.last {
+            navigationArray = [vc]
+        }
+        self.setViewControllers(navigationArray, animated: true)
+        
+    }
     /*
     // MARK: - Navigation
 

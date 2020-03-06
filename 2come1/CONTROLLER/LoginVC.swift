@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: BaseVC {
     
     @IBOutlet weak var usernameOrEmailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -27,7 +27,13 @@ class LoginVC: UIViewController {
         
     }
     
-
+    @IBAction func loginBtnPressAction(_ sender: UIButton) {
+       
+        if let nvc = self.navigationController as? NavigationVC {
+            nvc.showTabManScreen()
+        }
+    }
+    
     @IBAction func registerBtnPressAction(_ sender: Any) {
 //        view.endEditing(true)
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)

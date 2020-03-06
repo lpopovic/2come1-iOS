@@ -8,4 +8,13 @@
 import Foundation
 import UIKit
 
-
+enum CustomNotificationName {
+    case getCurrentLocation
+    
+    var value: String{
+        switch self {
+        case .getCurrentLocation:
+            return "CurrentLocationNotification"
+        }
+    }
+}
