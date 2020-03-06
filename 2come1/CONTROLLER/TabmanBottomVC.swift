@@ -183,7 +183,6 @@ extension TabmanBottomVC: CLLocationManagerDelegate {
         
         switch status {
         case .authorizedAlways:
-            self.retriveCurrentLocation()
             print("user allow app to get location data when app is active or in background")
         case .authorizedWhenInUse:
             self.retriveCurrentLocation()
