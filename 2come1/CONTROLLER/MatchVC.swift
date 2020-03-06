@@ -117,7 +117,7 @@ extension MatchVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if self.refresher.isRefreshing && self.arrayUsers.count > indexPath.row {
-            let selectedUser = self.arrayUsers[indexPath.row]
+            _ = self.arrayUsers[indexPath.row]
         }
     }
 }
