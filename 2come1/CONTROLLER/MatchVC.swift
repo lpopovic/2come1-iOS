@@ -116,8 +116,19 @@ extension MatchVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if self.refresher.isRefreshing && self.arrayUsers.count > indexPath.row {
-            _ = self.arrayUsers[indexPath.row]
+        if !self.refresher.isRefreshing && self.arrayUsers.count > indexPath.row {
+            let currentUser = self.arrayUsers[indexPath.row]
+            
+            guard let nvc = self.navigationController as? NavigationVC else {
+                return
+            }
+            if self.segmentedSort.selectedSegmentIndex == 0 {
+                // my matches
+                nvc.showMatchUserVCScreen(user: currentUser)
+            } else if self.segmentedSort.selectedSegmentIndex == 1 {
+                // my requestes
+            }
+            
         }
     }
 }

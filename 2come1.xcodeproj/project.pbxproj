@@ -34,6 +34,11 @@
 		D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */; };
 		D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */; };
 		D0F974B724185BE800CEFF2F /* MatchUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974B624185BE800CEFF2F /* MatchUserVC.swift */; };
+		D0F974BD2418E4FB00CEFF2F /* CCZoomAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974B92418E4FB00CEFF2F /* CCZoomAnimatedTransitioning.swift */; };
+		D0F974BE2418E4FB00CEFF2F /* CCZoomTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974BA2418E4FB00CEFF2F /* CCZoomTransitioner.swift */; };
+		D0F974BF2418E4FB00CEFF2F /* CCSwipBackPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974BB2418E4FB00CEFF2F /* CCSwipBackPresentationController.swift */; };
+		D0F974C02418E4FB00CEFF2F /* CCZoomTransitionVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974BC2418E4FB00CEFF2F /* CCZoomTransitionVCExtension.swift */; };
+		D0F974C22418F03D00CEFF2F /* CCDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974C12418F03D00CEFF2F /* CCDetailViewController.swift */; };
 		D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */; };
 		D0FF5664240EEAA200039DB5 /* TVCNearbyUsers.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */; };
 		D0FF5666240F083200039DB5 /* NearbyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF5665240F083200039DB5 /* NearbyUser.swift */; };
@@ -74,6 +79,11 @@
 		D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeader.swift; sourceTree = "<group>"; };
 		D0F974B624185BE800CEFF2F /* MatchUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchUserVC.swift; sourceTree = "<group>"; };
+		D0F974B92418E4FB00CEFF2F /* CCZoomAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCZoomAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		D0F974BA2418E4FB00CEFF2F /* CCZoomTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCZoomTransitioner.swift; sourceTree = "<group>"; };
+		D0F974BB2418E4FB00CEFF2F /* CCSwipBackPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSwipBackPresentationController.swift; sourceTree = "<group>"; };
+		D0F974BC2418E4FB00CEFF2F /* CCZoomTransitionVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCZoomTransitionVCExtension.swift; sourceTree = "<group>"; };
+		D0F974C12418F03D00CEFF2F /* CCDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCDetailViewController.swift; sourceTree = "<group>"; };
 		D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCNearbyUsers.swift; sourceTree = "<group>"; };
 		D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCNearbyUsers.xib; sourceTree = "<group>"; };
 		D0FF5665240F083200039DB5 /* NearbyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUser.swift; sourceTree = "<group>"; };
@@ -162,6 +172,7 @@
 		D0029FE2240D495C00D62A23 /* EXTENSION */ = {
 			isa = PBXGroup;
 			children = (
+				D0F974B82418E4E400CEFF2F /* CCZoomTransition */,
 				42470BBD240F29380083840B /* SwipeNavigationController.swift */,
 				D073DD60240E80E5005D85B8 /* Helper+UIImage.swift */,
 				D073DD52240E7CFF005D85B8 /* Helper+UIColor.swift */,
@@ -238,6 +249,18 @@
 				D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */,
 			);
 			path = BaseHeader;
+			sourceTree = "<group>";
+		};
+		D0F974B82418E4E400CEFF2F /* CCZoomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				D0F974C12418F03D00CEFF2F /* CCDetailViewController.swift */,
+				D0F974BB2418E4FB00CEFF2F /* CCSwipBackPresentationController.swift */,
+				D0F974B92418E4FB00CEFF2F /* CCZoomAnimatedTransitioning.swift */,
+				D0F974BA2418E4FB00CEFF2F /* CCZoomTransitioner.swift */,
+				D0F974BC2418E4FB00CEFF2F /* CCZoomTransitionVCExtension.swift */,
+			);
+			path = CCZoomTransition;
 			sourceTree = "<group>";
 		};
 		D0FF5660240EEA2500039DB5 /* TVCNearbyUsers */ = {
@@ -380,12 +403,15 @@
 				D073DD5D240E80A3005D85B8 /* VC4.swift in Sources */,
 				D073DD55240E8054005D85B8 /* TabmanBottomVC.swift in Sources */,
 				D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */,
+				D0F974C02418E4FB00CEFF2F /* CCZoomTransitionVCExtension.swift in Sources */,
 				D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */,
 				42470BBE240F29380083840B /* SwipeNavigationController.swift in Sources */,
 				D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */,
 				D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */,
 				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
 				D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */,
+				D0F974BF2418E4FB00CEFF2F /* CCSwipBackPresentationController.swift in Sources */,
+				D0F974BD2418E4FB00CEFF2F /* CCZoomAnimatedTransitioning.swift in Sources */,
 				D0F974B724185BE800CEFF2F /* MatchUserVC.swift in Sources */,
 				D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */,
 				D073DD5F240E80A3005D85B8 /* VC2.swift in Sources */,
@@ -395,7 +421,9 @@
 				D073DD61240E80E5005D85B8 /* Helper+UIImage.swift in Sources */,
 				D0029FCF240D332900D62A23 /* SceneDelegate.swift in Sources */,
 				D0FF5666240F083200039DB5 /* NearbyUser.swift in Sources */,
+				D0F974BE2418E4FB00CEFF2F /* CCZoomTransitioner.swift in Sources */,
 				D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */,
+				D0F974C22418F03D00CEFF2F /* CCDetailViewController.swift in Sources */,
 				D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,
 				D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */,

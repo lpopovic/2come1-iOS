@@ -39,7 +39,7 @@ enum NavigationBarIcon {
             return UIImage(named: "icon-back")!
         case .more:
             return UIImage(named: "icon-more")!
-        
+            
         }
     }
 }
@@ -64,12 +64,18 @@ enum customImages {
 
 enum testImages {
     case
-    test1
+    test1,
+    test2,
+    test3
     
     var value: UIImage {
         switch self {
         case .test1:
             return UIImage(named: "TestImage1")!
+        case .test2:
+            return UIImage(named: "TestImage2")!
+        case .test3:
+            return UIImage(named: "TestImage3")!
         }
     }
 }

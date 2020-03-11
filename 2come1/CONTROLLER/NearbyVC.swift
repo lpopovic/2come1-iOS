@@ -98,7 +98,7 @@ extension NearbyVC: TVCNearbyUsersDelegate {
             guard let nvc = self.navigationController as? NavigationVC else {
                 return
             }
-            nvc.showMatchVCScreen(user: user)
+            nvc.showMatchUserVCScreen(user: user)
         }
     }
     

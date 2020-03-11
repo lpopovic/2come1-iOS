@@ -15,6 +15,10 @@ class MatchUserVC: BaseVC {
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var btnMessage: UIButton!
     @IBOutlet weak var mainScrollView: UIScrollView!
+    @IBOutlet weak var imgUserImage1: UIImageView!
+    @IBOutlet weak var imgUserImage2: UIImageView!
+    @IBOutlet weak var imgUserImage3: UIImageView!
+    @IBOutlet weak var imgViewContainer: UIView!
     @IBOutlet weak var separatorTopView: UIView!
     @IBOutlet weak var separatorBottomView: UIView!
     //MARK: Variable
@@ -35,8 +39,22 @@ class MatchUserVC: BaseVC {
         self.mainScrollView.bounces = false
         self.mainScrollView.showsHorizontalScrollIndicator = false
         self.mainScrollView.isDirectionalLockEnabled = true
+        self.initActionTapImageView()
+        
+        self.imgUserImage1.image = testImages.test1.value
+        self.imgUserImage2.image = testImages.test2.value
+        self.imgUserImage3.image = testImages.test3.value
         
         
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        var contentRect = CGRect.zero
+        
+        for view in mainScrollView.subviews {
+            contentRect = contentRect.union(view.frame)
+        }
+        mainScrollView.contentSize = contentRect.size
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,12 +68,7 @@ class MatchUserVC: BaseVC {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        var contentRect = CGRect.zero
-        
-        for view in mainScrollView.subviews {
-            contentRect = contentRect.union(view.frame)
-        }
-        mainScrollView.contentSize = contentRect.size
+        self.initImageViewSetup()
     }
     
     func initViewSetup() {
@@ -78,7 +91,91 @@ class MatchUserVC: BaseVC {
         
         self.separatorTopView.backgroundColor = BaseColor.gold.value
         self.separatorBottomView.backgroundColor = BaseColor.gold.value
+        
+        self.imgUserImage1.isHidden = true
+        self.imgUserImage2.isHidden = true
+        self.imgUserImage3.isHidden = true
+        
+        self.imgViewContainer.backgroundColor = .clear
     }
+    func initImageViewSetup() {
+        
+        self.imgUserImage1.isHidden = false
+        self.imgUserImage2.isHidden = false
+        self.imgUserImage3.isHidden = false
+        
+        self.imgUserImage1.layer.borderColor = BaseColor.black.value.cgColor
+        self.imgUserImage1.layer.borderWidth = 2
+        self.imgUserImage1.layer.cornerRadius = self.imgUserImage1.frame.size.width / 2
+        self.imgUserImage1.clipsToBounds = true
+        self.imgUserImage1.backgroundColor = .clear
+        self.imgUserImage1.tag = 1
+        self.imgUserImage1.contentMode = .scaleAspectFill
+        
+        self.imgUserImage2.layer.borderColor = BaseColor.black.value.cgColor
+        self.imgUserImage2.layer.borderWidth = 2
+        self.imgUserImage2.layer.cornerRadius = self.imgUserImage2.frame.size.width / 2
+        self.imgUserImage2.clipsToBounds = true
+        self.imgUserImage2.backgroundColor = .clear
+        self.imgUserImage2.tag = 2
+        self.imgUserImage2.contentMode = .scaleAspectFill
+        
+        self.imgUserImage3.layer.borderColor = BaseColor.black.value.cgColor
+        self.imgUserImage3.layer.borderWidth = 2
+        self.imgUserImage3.layer.cornerRadius = self.imgUserImage3.frame.size.width / 2
+        self.imgUserImage3.clipsToBounds = true
+        self.imgUserImage3.backgroundColor = .clear
+        self.imgUserImage3.tag = 3
+        self.imgUserImage3.contentMode = .scaleAspectFill
+    }
+    
+    func initActionTapImageView(){
+        
+        self.imgUserImage1.isUserInteractionEnabled = true
+        self.imgUserImage1.isMultipleTouchEnabled = true
+        self.imgUserImage1.gestureRecognizers?.removeAll()
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        self.imgUserImage1.addGestureRecognizer(tap1)
+        
+        self.imgUserImage2.isUserInteractionEnabled = true
+        self.imgUserImage2.isMultipleTouchEnabled = true
+        self.imgUserImage2.gestureRecognizers?.removeAll()
+         let tap2 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        self.imgUserImage2.addGestureRecognizer(tap2)
+        
+        self.imgUserImage3.isUserInteractionEnabled = true
+        self.imgUserImage3.isMultipleTouchEnabled = true
+        self.imgUserImage3.gestureRecognizers?.removeAll()
+         let tap3 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        self.imgUserImage3.addGestureRecognizer(tap3)
+    }
+    
+    @objc func handleTap(sender: UITapGestureRecognizer) {
+        guard let selectedView = sender.view else {
+            return
+        }
+        let vc = CCDetailViewController()
+        switch selectedView.tag {
+        case 1:
+        
+            vc.cc_setZoomTransition(originalView: self.imgUserImage1)
+            vc.imageView.image = testImages.test1.value
+            break
+        case 2:
+             vc.cc_setZoomTransition(originalView: self.imgUserImage2)
+             vc.imageView.image = testImages.test2.value
+            break
+        case 3:
+             vc.cc_setZoomTransition(originalView: self.imgUserImage3)
+             vc.imageView.image = testImages.test3.value
+            break
+        default:
+            break
+        }
+        
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     /*
      // MARK: - Navigation
      
