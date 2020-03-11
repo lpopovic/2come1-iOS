@@ -31,6 +31,13 @@ class NavigationVC: SwipeNavigationController {
         self.setViewControllers(navigationArray, animated: true)
         
     }
+    
+    func showMatchVCScreen(user: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MatchUserVC") as! MatchUserVC
+        vc.currentUser = user
+        self.pushViewController(vc,animated: true)
+    }
     /*
     // MARK: - Navigation
 

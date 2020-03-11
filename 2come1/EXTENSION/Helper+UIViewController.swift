@@ -31,7 +31,7 @@ extension UIAlertAction {
     static func createDefaultCancelAction() -> UIAlertAction{
         return UIAlertAction(title: NSLocalizedString("Cancel",
                                                       comment: "comment for user"),
-                             style: UIAlertAction.Style.default,
+                             style: UIAlertAction.Style.cancel,
                              handler: nil)
     }
 }

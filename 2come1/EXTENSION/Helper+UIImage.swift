@@ -28,11 +28,27 @@ enum TabBarIcon {
         }
     }
 }
+enum NavigationBarIcon {
+    case
+    back,
+    more
+    
+    var value: UIImage {
+        switch self {
+        case .back:
+            return UIImage(named: "icon-back")!
+        case .more:
+            return UIImage(named: "icon-more")!
+        
+        }
+    }
+}
 
 enum customImages {
     case
     jin,
-    userAvatar
+    userAvatar,
+    message
     
     var value: UIImage {
         switch self {
@@ -40,6 +56,20 @@ enum customImages {
             return UIImage(named: "jin")!
         case .userAvatar:
             return UIImage(named: "user-avatar")!
+        case .message:
+            return UIImage(named: "icon-message")!
+        }
+    }
+}
+
+enum testImages {
+    case
+    test1
+    
+    var value: UIImage {
+        switch self {
+        case .test1:
+            return UIImage(named: "TestImage1")!
         }
     }
 }

@@ -33,6 +33,7 @@
 		D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */; };
 		D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */; };
 		D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */; };
+		D0F974B724185BE800CEFF2F /* MatchUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F974B624185BE800CEFF2F /* MatchUserVC.swift */; };
 		D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */; };
 		D0FF5664240EEAA200039DB5 /* TVCNearbyUsers.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */; };
 		D0FF5666240F083200039DB5 /* NearbyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FF5665240F083200039DB5 /* NearbyUser.swift */; };
@@ -72,6 +73,7 @@
 		D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
 		D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		D0DCBFD3240EA7AA00D6E201 /* BaseHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHeader.swift; sourceTree = "<group>"; };
+		D0F974B624185BE800CEFF2F /* MatchUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchUserVC.swift; sourceTree = "<group>"; };
 		D0FF5661240EEAA200039DB5 /* TVCNearbyUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCNearbyUsers.swift; sourceTree = "<group>"; };
 		D0FF5662240EEAA200039DB5 /* TVCNearbyUsers.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCNearbyUsers.xib; sourceTree = "<group>"; };
 		D0FF5665240F083200039DB5 /* NearbyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUser.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */,
 				D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */,
 				D05AF64E2411B9B600F96D2E /* MatchVC.swift */,
+				D0F974B624185BE800CEFF2F /* MatchUserVC.swift */,
 				42470BB9240EFA090083840B /* LoginVC.swift */,
 				42470BBB240EFA440083840B /* RegisterVC.swift */,
 			);
@@ -383,6 +386,7 @@
 				D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */,
 				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
 				D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */,
+				D0F974B724185BE800CEFF2F /* MatchUserVC.swift in Sources */,
 				D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */,
 				D073DD5F240E80A3005D85B8 /* VC2.swift in Sources */,
 				D0029FE8240D4A4F00D62A23 /* ConstantsForApp.swift in Sources */,

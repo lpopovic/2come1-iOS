@@ -95,6 +95,10 @@ extension NearbyVC: TVCNearbyUsersDelegate {
     func onPressNearbyUser(_ user: String) {
         if !self.refresher.isRefreshing {
             print("Press:\(user)")
+            guard let nvc = self.navigationController as? NavigationVC else {
+                return
+            }
+            nvc.showMatchVCScreen(user: user)
         }
     }
     
