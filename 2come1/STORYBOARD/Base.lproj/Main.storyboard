@@ -1027,10 +1027,11 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCEPT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sal-1Y-tBp">
-                                                <rect key="frame" x="0.0" y="50" width="80" height="15"/>
+                                                <rect key="frame" x="10" y="50" width="60" height="15"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="HcG-Mt-gfw"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="fNm-Vy-ij9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1039,8 +1040,8 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="R7S-ey-U3r"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Sal-1Y-tBp" secondAttribute="trailing" id="rHL-m6-mOT"/>
-                                            <constraint firstItem="Sal-1Y-tBp" firstAttribute="leading" secondItem="3Y2-UY-Wdb" secondAttribute="leadingMargin" id="tCQ-cT-zv0"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Sal-1Y-tBp" secondAttribute="trailing" id="rHL-m6-mOT"/>
+                                            <constraint firstItem="Sal-1Y-tBp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Y2-UY-Wdb" secondAttribute="leadingMargin" id="tCQ-cT-zv0"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qiz-hT-Mot">
@@ -1058,10 +1059,11 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DECLINE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlN-rQ-oyM">
-                                                <rect key="frame" x="0.0" y="50" width="80" height="15"/>
+                                                <rect key="frame" x="10" y="50" width="60" height="15"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="9c8-kD-ckq"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Bgj-x8-mjp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1069,8 +1071,8 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="AlN-rQ-oyM" firstAttribute="leading" secondItem="Qiz-hT-Mot" secondAttribute="leadingMargin" id="0X3-oj-Osw"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="AlN-rQ-oyM" secondAttribute="trailing" id="x0K-Q5-XfK"/>
+                                            <constraint firstItem="AlN-rQ-oyM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qiz-hT-Mot" secondAttribute="leadingMargin" id="0X3-oj-Osw"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="AlN-rQ-oyM" secondAttribute="trailing" id="x0K-Q5-XfK"/>
                                             <constraint firstAttribute="width" constant="80" id="zuI-K4-Udi"/>
                                         </constraints>
                                     </stackView>

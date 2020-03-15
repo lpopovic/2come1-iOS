@@ -106,7 +106,7 @@ class RequestedMatchUserVC: BaseVC {
         self.lblAcceptRequest.layer.borderWidth = 2
         self.lblAcceptRequest.layer.borderColor = BaseColor.gold.value.cgColor
         self.lblAcceptRequest.backgroundColor = BaseColor.black.value
-        self.lblAcceptRequest.text = NSLocalizedString("Accept", comment: "comment for user").uppercased()
+        self.lblAcceptRequest.text = " \(NSLocalizedString("Accept", comment: "comment for user").uppercased()) "
         
         self.btnDeclineRequest.tintColor = BaseColor.black.value
         self.btnDeclineRequest.backgroundColor = BaseColor.white.value
@@ -128,7 +128,7 @@ class RequestedMatchUserVC: BaseVC {
         self.lblDeclineRequest.layer.borderWidth = 2
         self.lblDeclineRequest.layer.borderColor = BaseColor.gold.value.cgColor
         self.lblDeclineRequest.backgroundColor = BaseColor.black.value
-        self.lblDeclineRequest.text = NSLocalizedString("Decline", comment: "comment for user").uppercased()
+        self.lblDeclineRequest.text = " \(NSLocalizedString("Decline", comment: "comment for user").uppercased()) "
         
         
         self.separatorTopView.backgroundColor = BaseColor.gold.value
