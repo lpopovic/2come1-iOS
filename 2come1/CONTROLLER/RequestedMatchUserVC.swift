@@ -39,11 +39,10 @@ class RequestedMatchUserVC: BaseVC {
         // Do any additional setup after loading the view.
         
         self.initViewSetup()
+        self.initActionTapImageView()
         
         self.lblTitle.text = "\(self.currentUser ?? ""), 20"
         self.lblDescription.text = self.text
-        
-        
         
         self.imgMainUserProfile.image = testImages.test1.value
         self.imgUserProfile1.image = testImages.test1.value
@@ -71,7 +70,7 @@ class RequestedMatchUserVC: BaseVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.initActionTapImageView()
+       
     }
     
     func initViewSetup() {
