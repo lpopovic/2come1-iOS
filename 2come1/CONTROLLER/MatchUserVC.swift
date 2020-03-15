@@ -35,17 +35,13 @@ class MatchUserVC: BaseVC {
         self.initViewSetup()
         
         self.lblTitle.text = "\(self.currentUser ?? ""), 20"
-        self.lblDescription.text = self.text + self.text
-        self.mainScrollView.bounces = false
-        self.mainScrollView.showsHorizontalScrollIndicator = false
-        self.mainScrollView.isDirectionalLockEnabled = true
+        self.lblDescription.text = self.text
+      
         self.initActionTapImageView()
         
         self.imgUserImage1.image = testImages.test1.value
         self.imgUserImage2.image = testImages.test2.value
         self.imgUserImage3.image = testImages.test3.value
-        
-        
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -64,14 +60,19 @@ class MatchUserVC: BaseVC {
             nvc.navigationBar.backgroundColor = BaseColor.white.value
         }
         
-        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         self.initImageViewSetup()
     }
     
     func initViewSetup() {
+        
+        self.mainScrollView.bounces = true
+        self.mainScrollView.showsHorizontalScrollIndicator = false
+        self.mainScrollView.isDirectionalLockEnabled = true
+        
         self.view.backgroundColor = .white
         
         self.lblTitle.textColor = BaseColor.black.value
@@ -176,15 +177,6 @@ class MatchUserVC: BaseVC {
         self.present(vc, animated: true, completion: nil)
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     func createNavigationMoreBtn() -> UIBarButtonItem {
         
         let moreImage = NavigationBarIcon.more.value
@@ -217,6 +209,10 @@ class MatchUserVC: BaseVC {
         self.present(alert, animated: true, completion: {
             print("completion block")
         })
+    }
+    
+    @IBAction func btnSendMessageAction(_ sender: UIButton) {
+        UIAlertController.createCustomAlert(self, "Action", "Show SendVC", [UIAlertAction.createDefoultOkAction()])
     }
     
 }

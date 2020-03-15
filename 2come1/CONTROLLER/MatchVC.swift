@@ -99,7 +99,7 @@ extension MatchVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TVCMatchUser", for: indexPath) as! TVCMatchUser
         cell.setupUIData(self.arrayUsers[indexPath.row])
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
@@ -123,10 +123,10 @@ extension MatchVC: UITableViewDelegate {
                 return
             }
             if self.segmentedSort.selectedSegmentIndex == 0 {
+                // my requestes
+            } else if self.segmentedSort.selectedSegmentIndex == 1 {
                 // my matches
                 nvc.showMatchUserVCScreen(user: currentUser)
-            } else if self.segmentedSort.selectedSegmentIndex == 1 {
-                // my requestes
             }
             
         }

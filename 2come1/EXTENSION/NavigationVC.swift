@@ -38,6 +38,12 @@ class NavigationVC: SwipeNavigationController {
         vc.currentUser = user
         self.pushViewController(vc,animated: true)
     }
+    func showUnmatchedUserVCScreen(user: String) {
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           let vc = storyboard.instantiateViewController(withIdentifier: "UnmatchedUserVC") as! UnmatchedUserVC
+           vc.currentUser = user
+           self.pushViewController(vc,animated: true)
+       }
     /*
     // MARK: - Navigation
 

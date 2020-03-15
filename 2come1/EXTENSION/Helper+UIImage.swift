@@ -48,7 +48,8 @@ enum customImages {
     case
     jin,
     userAvatar,
-    message
+    message,
+    yinYang
     
     var value: UIImage {
         switch self {
@@ -58,6 +59,8 @@ enum customImages {
             return UIImage(named: "user-avatar")!
         case .message:
             return UIImage(named: "icon-message")!
+        case .yinYang:
+            return UIImage(named: "icon_yinYang")!
         }
     }
 }
