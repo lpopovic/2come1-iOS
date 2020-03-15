@@ -9,10 +9,10 @@
 import UIKit
 
 class NavigationVC: SwipeNavigationController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .black
     }
@@ -39,19 +39,25 @@ class NavigationVC: SwipeNavigationController {
         self.pushViewController(vc,animated: true)
     }
     func showUnmatchedUserVCScreen(user: String) {
-           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-           let vc = storyboard.instantiateViewController(withIdentifier: "UnmatchedUserVC") as! UnmatchedUserVC
-           vc.currentUser = user
-           self.pushViewController(vc,animated: true)
-       }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "UnmatchedUserVC") as! UnmatchedUserVC
+        vc.currentUser = user
+        self.pushViewController(vc,animated: true)
     }
-    */
-
+    func showRequestedMatchUserVCScreen(user: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RequestedMatchUserVC") as! RequestedMatchUserVC
+        vc.currentUser = user
+        self.pushViewController(vc,animated: true)
+    }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

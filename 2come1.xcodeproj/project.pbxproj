@@ -19,6 +19,7 @@
 		D0029FE8240D4A4F00D62A23 /* ConstantsForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE7240D4A4F00D62A23 /* ConstantsForApp.swift */; };
 		D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */; };
 		D0348CCA241EA7DC004CC9B3 /* UnmatchedUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CC9241EA7DC004CC9B3 /* UnmatchedUserVC.swift */; };
+		D0348CD1241ECC97004CC9B3 /* RequestedMatchUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CD0241ECC97004CC9B3 /* RequestedMatchUserVC.swift */; };
 		D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */; };
 		D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF64E2411B9B600F96D2E /* MatchVC.swift */; };
 		D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */; };
@@ -62,6 +63,7 @@
 		D0029FE7240D4A4F00D62A23 /* ConstantsForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForApp.swift; sourceTree = "<group>"; };
 		D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsRestAPI.swift; sourceTree = "<group>"; };
 		D0348CC9241EA7DC004CC9B3 /* UnmatchedUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnmatchedUserVC.swift; sourceTree = "<group>"; };
+		D0348CD0241ECC97004CC9B3 /* RequestedMatchUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestedMatchUserVC.swift; sourceTree = "<group>"; };
 		D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIViewController.swift"; sourceTree = "<group>"; };
 		D05AF64E2411B9B600F96D2E /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
 		D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCMatchUser.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				D05AF64E2411B9B600F96D2E /* MatchVC.swift */,
 				D0F974B624185BE800CEFF2F /* MatchUserVC.swift */,
 				D0348CC9241EA7DC004CC9B3 /* UnmatchedUserVC.swift */,
+				D0348CD0241ECC97004CC9B3 /* RequestedMatchUserVC.swift */,
 				42470BB9240EFA090083840B /* LoginVC.swift */,
 				42470BBB240EFA440083840B /* RegisterVC.swift */,
 			);
@@ -427,6 +430,7 @@
 				D0F974BE2418E4FB00CEFF2F /* CCZoomTransitioner.swift in Sources */,
 				D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */,
 				D0348CCA241EA7DC004CC9B3 /* UnmatchedUserVC.swift in Sources */,
+				D0348CD1241ECC97004CC9B3 /* RequestedMatchUserVC.swift in Sources */,
 				D0F974C22418F03D00CEFF2F /* CCDetailViewController.swift in Sources */,
 				D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,

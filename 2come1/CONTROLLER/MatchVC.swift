@@ -124,6 +124,7 @@ extension MatchVC: UITableViewDelegate {
             }
             if self.segmentedSort.selectedSegmentIndex == 0 {
                 // my requestes
+                nvc.showRequestedMatchUserVCScreen(user: currentUser)
             } else if self.segmentedSort.selectedSegmentIndex == 1 {
                 // my matches
                 nvc.showMatchUserVCScreen(user: currentUser)
