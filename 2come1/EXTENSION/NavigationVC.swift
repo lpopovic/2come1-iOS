@@ -17,7 +17,14 @@ class NavigationVC: SwipeNavigationController {
 //        self.view.backgroundColor = .black
       
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) {
+             return .darkContent
+        } else {
+            // Fallback on earlier versions
+             return .default
+        }
+       }
     func showTabManScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "TabmanBottomVC") as! TabmanBottomVC
