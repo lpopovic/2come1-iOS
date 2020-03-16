@@ -15,6 +15,7 @@ class BaseHeader: UIView {
     func setup(_ title:String,_ separatorColor: UIColor) {
         self.title.text = title
         self.title.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        self.title.textColor = BaseColor.black.value
         self.borderView.backgroundColor = separatorColor
         self.backgroundColor = BaseColor.white.value
     }

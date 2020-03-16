@@ -13,6 +13,18 @@ class BaseVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = BaseColor.black.value
+        if #available(iOS 13, *)
+        {
+            let statusBar = UIView(frame: (UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame)!)
+            statusBar.backgroundColor = BaseColor.black.value
+            UIApplication.shared.keyWindow?.addSubview(statusBar)
+        } else {
+           // ADD THE STATUS BAR AND SET A CUSTOM COLOR
+           let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+           if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+              statusBar.backgroundColor = BaseColor.black.value
+           }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -21,10 +33,15 @@ class BaseVC: UIViewController {
             nvc.setNavigationBarHidden(true, animated: animated)
         }
         setNeedsStatusBarAppearanceUpdate()
+         
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
+        if #available(iOS 13.0, *) {
+            return .lightContent
+        } else {
+            return .lightContent
+        }
     }
     /*
      // MARK: - Navigation

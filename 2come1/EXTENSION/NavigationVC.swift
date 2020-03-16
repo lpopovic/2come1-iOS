@@ -14,7 +14,8 @@ class NavigationVC: SwipeNavigationController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .black
+//        self.view.backgroundColor = .black
+      
     }
     
     func showTabManScreen() {

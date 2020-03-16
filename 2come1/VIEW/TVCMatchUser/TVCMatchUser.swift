@@ -31,6 +31,7 @@ class TVCMatchUser: UITableViewCell {
         self.lblUserDescritpion.font = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.regular)
         self.lblUserDescritpion.numberOfLines = 0
         self.lblUserDescritpion.textAlignment = .left
+        self.lblUserDescritpion.textColor = BaseColor.black.value
         
         self.imgUserImage.layer.cornerRadius = self.imgUserImage.frame.size.height / 2
         self.imgUserImage.clipsToBounds = true

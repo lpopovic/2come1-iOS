@@ -20,6 +20,9 @@
 		D0029FEA240D4A6D00D62A23 /* ConstantsRestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */; };
 		D0348CCA241EA7DC004CC9B3 /* UnmatchedUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CC9241EA7DC004CC9B3 /* UnmatchedUserVC.swift */; };
 		D0348CD1241ECC97004CC9B3 /* RequestedMatchUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CD0241ECC97004CC9B3 /* RequestedMatchUserVC.swift */; };
+		D0348CD624201509004CC9B3 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CD524201509004CC9B3 /* InboxVC.swift */; };
+		D0348CD924201938004CC9B3 /* TVCInboxUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CD724201938004CC9B3 /* TVCInboxUser.swift */; };
+		D0348CDA24201938004CC9B3 /* TVCInboxUser.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0348CD824201938004CC9B3 /* TVCInboxUser.xib */; };
 		D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */; };
 		D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF64E2411B9B600F96D2E /* MatchVC.swift */; };
 		D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */; };
@@ -64,6 +67,9 @@
 		D0029FE9240D4A6D00D62A23 /* ConstantsRestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsRestAPI.swift; sourceTree = "<group>"; };
 		D0348CC9241EA7DC004CC9B3 /* UnmatchedUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnmatchedUserVC.swift; sourceTree = "<group>"; };
 		D0348CD0241ECC97004CC9B3 /* RequestedMatchUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestedMatchUserVC.swift; sourceTree = "<group>"; };
+		D0348CD524201509004CC9B3 /* InboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
+		D0348CD724201938004CC9B3 /* TVCInboxUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCInboxUser.swift; sourceTree = "<group>"; };
+		D0348CD824201938004CC9B3 /* TVCInboxUser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCInboxUser.xib; sourceTree = "<group>"; };
 		D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIViewController.swift"; sourceTree = "<group>"; };
 		D05AF64E2411B9B600F96D2E /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
 		D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCMatchUser.swift; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 				D0DCBFCE240EA1CC00D6E201 /* TestVC */,
 				D073DD54240E8054005D85B8 /* TabmanBottomVC.swift */,
 				D0DCBFCC240EA1AC00D6E201 /* NearbyVC.swift */,
+				D0348CD524201509004CC9B3 /* InboxVC.swift */,
 				D05AF64E2411B9B600F96D2E /* MatchVC.swift */,
 				D0F974B624185BE800CEFF2F /* MatchUserVC.swift */,
 				D0348CC9241EA7DC004CC9B3 /* UnmatchedUserVC.swift */,
@@ -192,6 +199,7 @@
 		D0029FE3240D497800D62A23 /* VIEW */ = {
 			isa = PBXGroup;
 			children = (
+				D0348CDB24201941004CC9B3 /* TVCInboxUser */,
 				D05AF6502411C4AA00F96D2E /* TVCMatchUser */,
 				D0FF5660240EEA2500039DB5 /* TVCNearbyUsers */,
 				D0DCBFD2240EA78800D6E201 /* BaseHeader */,
@@ -220,6 +228,15 @@
 				D0029FD7240D332B00D62A23 /* LaunchScreen.storyboard */,
 			);
 			path = STORYBOARD;
+			sourceTree = "<group>";
+		};
+		D0348CDB24201941004CC9B3 /* TVCInboxUser */ = {
+			isa = PBXGroup;
+			children = (
+				D0348CD724201938004CC9B3 /* TVCInboxUser.swift */,
+				D0348CD824201938004CC9B3 /* TVCInboxUser.xib */,
+			);
+			path = TVCInboxUser;
 			sourceTree = "<group>";
 		};
 		D05AF6502411C4AA00F96D2E /* TVCMatchUser */ = {
@@ -350,6 +367,7 @@
 			files = (
 				D05AF6542411C4E700F96D2E /* TVCMatchUser.xib in Resources */,
 				D0029FD9240D332B00D62A23 /* LaunchScreen.storyboard in Resources */,
+				D0348CDA24201938004CC9B3 /* TVCInboxUser.xib in Resources */,
 				D0DCBFC8240E9A5100D6E201 /* Localizable.strings in Resources */,
 				D0FF5664240EEAA200039DB5 /* TVCNearbyUsers.xib in Resources */,
 				D0029FD6240D332B00D62A23 /* Assets.xcassets in Resources */,
@@ -431,6 +449,8 @@
 				D0FF5663240EEAA200039DB5 /* TVCNearbyUsers.swift in Sources */,
 				D0348CCA241EA7DC004CC9B3 /* UnmatchedUserVC.swift in Sources */,
 				D0348CD1241ECC97004CC9B3 /* RequestedMatchUserVC.swift in Sources */,
+				D0348CD924201938004CC9B3 /* TVCInboxUser.swift in Sources */,
+				D0348CD624201509004CC9B3 /* InboxVC.swift in Sources */,
 				D0F974C22418F03D00CEFF2F /* CCDetailViewController.swift in Sources */,
 				D0DCBFD4240EA7AA00D6E201 /* BaseHeader.swift in Sources */,
 				D073DD57240E8078005D85B8 /* BaseVC.swift in Sources */,

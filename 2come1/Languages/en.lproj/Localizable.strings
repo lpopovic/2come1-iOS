@@ -15,6 +15,7 @@
 "Match" = "Match";
 "Profile"  = "Profile";
 "Nearby" = "Nearby";
+"Inbox" = "Inbox";
 "Pull to refresh" = "Pull to refresh";
 "Open Settings" = "Open Settings";
 "Cancel" = "Cancel";
@@ -30,3 +31,6 @@
 "Send Requests" = "Send Requests";
 "Accept" = "Accept";
 "Decline" = "Decline";
+"Status" = "Status";
+"Online" = "Online";
+"Offline" = "Offline";

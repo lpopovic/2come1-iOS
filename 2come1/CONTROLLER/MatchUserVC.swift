@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MatchUserVC: BaseVC {
+
+class MatchUserVC: UIViewController {
     
     //MARK: Outlet
     @IBOutlet weak var lblTitle: UILabel!
@@ -25,6 +26,7 @@ class MatchUserVC: BaseVC {
     var currentUser: String?
     let text: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim neque volutpat ac tincidunt. Ullamcorper sit amet risus nullam. Purus semper eget duis at tellus at. Cursus mattis molestie a iaculis at. Scelerisque felis imperdiet proin fermentum leo. Vitae nunc sed velit dignissim sodales ut eu sem. Adipiscing vitae proin sagittis nisl rhoncus. Nibh tortor id aliquet lectus proin nibh nisl. Eget sit amet tellus cras adipiscing enim eu turpis."
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +38,7 @@ class MatchUserVC: BaseVC {
         
         self.lblTitle.text = "\(self.currentUser ?? ""), 20"
         self.lblDescription.text = self.text
-      
+        
         self.initActionTapImageView()
         
         self.imgUserImage1.image = testImages.test1.value
@@ -60,11 +62,20 @@ class MatchUserVC: BaseVC {
             nvc.navigationBar.backgroundColor = BaseColor.white.value
         }
         
+        
     }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        if #available(iOS 13.0, *) {
+//            return .default
+//        } else {
+//            return .lightContent
+//        }
+//    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         self.initImageViewSetup()
+        
     }
     
     func initViewSetup() {
@@ -141,13 +152,13 @@ class MatchUserVC: BaseVC {
         self.imgUserImage2.isUserInteractionEnabled = true
         self.imgUserImage2.isMultipleTouchEnabled = true
         self.imgUserImage2.gestureRecognizers?.removeAll()
-         let tap2 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
         self.imgUserImage2.addGestureRecognizer(tap2)
         
         self.imgUserImage3.isUserInteractionEnabled = true
         self.imgUserImage3.isMultipleTouchEnabled = true
         self.imgUserImage3.gestureRecognizers?.removeAll()
-         let tap3 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
+        let tap3 = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(sender:)))
         self.imgUserImage3.addGestureRecognizer(tap3)
     }
     
@@ -158,17 +169,17 @@ class MatchUserVC: BaseVC {
         let vc = CCDetailViewController()
         switch selectedView.tag {
         case 1:
-        
+            
             vc.cc_setZoomTransition(originalView: self.imgUserImage1)
             vc.imageView.image = testImages.test1.value
             break
         case 2:
-             vc.cc_setZoomTransition(originalView: self.imgUserImage2)
-             vc.imageView.image = testImages.test2.value
+            vc.cc_setZoomTransition(originalView: self.imgUserImage2)
+            vc.imageView.image = testImages.test2.value
             break
         case 3:
-             vc.cc_setZoomTransition(originalView: self.imgUserImage3)
-             vc.imageView.image = testImages.test3.value
+            vc.cc_setZoomTransition(originalView: self.imgUserImage3)
+            vc.imageView.image = testImages.test3.value
             break
         default:
             break

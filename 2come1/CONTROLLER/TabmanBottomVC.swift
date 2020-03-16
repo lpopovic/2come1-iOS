@@ -48,7 +48,7 @@ class TabmanBottomVC: TabmanViewController {
         
         self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "NearbyVC"))
         
-        self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "VC2"))
+        self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "InboxVC"))
         
         self.nizVC.append(storyboard.instantiateViewController(withIdentifier: "MatchVC"))
         
