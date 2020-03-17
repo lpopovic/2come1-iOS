@@ -58,7 +58,9 @@ class MessagesVC: BaseVC {
         //TODO: Set yourself as the delegate of the text field here:
         messageTextfield.delegate = self
         messageTextfield.textColor = BaseColor.black.value
-        messageTextfield.attributedPlaceholder = NSAttributedString(string: "Enter Your Message", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        messageTextfield.backgroundColor = BaseColor.white.value
+        messageTextfield.attributedPlaceholder = NSAttributedString(string:NSLocalizedString("Enter Your Message",
+        comment: "comment for user"), attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         
         //TODO: Set the tapGesture here:
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
@@ -82,7 +84,7 @@ class MessagesVC: BaseVC {
         messageTableView.delegate = self
         messageTableView.rowHeight = UITableView.automaticDimension
         messageTableView.estimatedRowHeight = 80.0
-        messageTableView.separatorStyle = .singleLine
+        messageTableView.separatorStyle = .none
         messageTableView.indicatorStyle = .white
         messageTableView.backgroundColor = BaseColor.black.value
     }
