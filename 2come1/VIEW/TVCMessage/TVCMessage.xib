@@ -18,14 +18,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j6N-xo-eNc">
-                        <rect key="frame" x="493" y="11" width="50" height="50"/>
+                        <rect key="frame" x="493" y="8" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="j6N-xo-eNc" secondAttribute="height" multiplier="1:1" id="582-By-HmA"/>
                             <constraint firstAttribute="height" constant="50" id="Xsc-ma-TNB"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4C-fX-6Q3">
-                        <rect key="frame" x="427" y="27" width="58" height="28.5"/>
+                        <rect key="frame" x="427" y="26" width="58" height="28.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nag-nv-xIX">
                                 <rect key="frame" x="8" y="4" width="42" height="20.5"/>
@@ -43,7 +43,7 @@
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-right" translatesAutoresizingMaskIntoConstraints="NO" id="ltg-AB-ck7">
-                        <rect key="frame" x="484" y="27" width="4" height="4"/>
+                        <rect key="frame" x="484" y="26" width="4" height="4"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ltg-AB-ck7" secondAttribute="height" multiplier="1:1" id="bi1-VB-lAo"/>
@@ -53,14 +53,14 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="V4C-fX-6Q3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7kV-7l-DIu"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="j6N-xo-eNc" secondAttribute="bottom" constant="11" id="CNZ-HM-hER"/>
-                    <constraint firstItem="j6N-xo-eNc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="EWY-3F-geU"/>
-                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="V4C-fX-6Q3" secondAttribute="bottom" id="H2n-jY-Ka4"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="j6N-xo-eNc" secondAttribute="bottom" constant="8" id="CNZ-HM-hER"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="V4C-fX-6Q3" secondAttribute="bottom" constant="8" id="Cvd-8E-BRF"/>
+                    <constraint firstItem="j6N-xo-eNc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Gvy-Gq-CN7"/>
                     <constraint firstItem="ltg-AB-ck7" firstAttribute="leading" secondItem="V4C-fX-6Q3" secondAttribute="trailing" constant="-1" id="QpM-rR-khV"/>
                     <constraint firstItem="j6N-xo-eNc" firstAttribute="leading" secondItem="V4C-fX-6Q3" secondAttribute="trailing" constant="8" id="V9v-iR-DXX"/>
                     <constraint firstItem="j6N-xo-eNc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="WNo-9m-1lw"/>
+                    <constraint firstItem="V4C-fX-6Q3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="jsj-0G-Vn8"/>
                     <constraint firstItem="ltg-AB-ck7" firstAttribute="top" secondItem="V4C-fX-6Q3" secondAttribute="top" id="nF2-fl-A3Q"/>
-                    <constraint firstItem="V4C-fX-6Q3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="sHp-ko-zHy"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
