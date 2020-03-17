@@ -23,6 +23,10 @@
 		D0348CD624201509004CC9B3 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CD524201509004CC9B3 /* InboxVC.swift */; };
 		D0348CD924201938004CC9B3 /* TVCInboxUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0348CD724201938004CC9B3 /* TVCInboxUser.swift */; };
 		D0348CDA24201938004CC9B3 /* TVCInboxUser.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0348CD824201938004CC9B3 /* TVCInboxUser.xib */; };
+		D045A49E242159B200250B34 /* MessagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045A49D242159B200250B34 /* MessagesVC.swift */; };
+		D045A4A2242172C000250B34 /* TVCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045A4A0242172C000250B34 /* TVCMessage.swift */; };
+		D045A4A3242172C000250B34 /* TVCMessage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D045A4A1242172C000250B34 /* TVCMessage.xib */; };
+		D045A4A52421778400250B34 /* Helper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D045A4A42421778400250B34 /* Helper+UIView.swift */; };
 		D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */; };
 		D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF64E2411B9B600F96D2E /* MatchVC.swift */; };
 		D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */; };
@@ -70,6 +74,10 @@
 		D0348CD524201509004CC9B3 /* InboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
 		D0348CD724201938004CC9B3 /* TVCInboxUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCInboxUser.swift; sourceTree = "<group>"; };
 		D0348CD824201938004CC9B3 /* TVCInboxUser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCInboxUser.xib; sourceTree = "<group>"; };
+		D045A49D242159B200250B34 /* MessagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesVC.swift; sourceTree = "<group>"; };
+		D045A4A0242172C000250B34 /* TVCMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCMessage.swift; sourceTree = "<group>"; };
+		D045A4A1242172C000250B34 /* TVCMessage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCMessage.xib; sourceTree = "<group>"; };
+		D045A4A42421778400250B34 /* Helper+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIView.swift"; sourceTree = "<group>"; };
 		D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+UIViewController.swift"; sourceTree = "<group>"; };
 		D05AF64E2411B9B600F96D2E /* MatchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchVC.swift; sourceTree = "<group>"; };
 		D05AF6512411C4E700F96D2E /* TVCMatchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCMatchUser.swift; sourceTree = "<group>"; };
@@ -178,6 +186,7 @@
 				D0348CD0241ECC97004CC9B3 /* RequestedMatchUserVC.swift */,
 				42470BB9240EFA090083840B /* LoginVC.swift */,
 				42470BBB240EFA440083840B /* RegisterVC.swift */,
+				D045A49D242159B200250B34 /* MessagesVC.swift */,
 			);
 			path = CONTROLLER;
 			sourceTree = "<group>";
@@ -192,6 +201,7 @@
 				D04838FB2411480400CA5ED9 /* Helper+UIViewController.swift */,
 				D073DD56240E8078005D85B8 /* BaseVC.swift */,
 				D0DCBFCF240EA2C200D6E201 /* NavigationVC.swift */,
+				D045A4A42421778400250B34 /* Helper+UIView.swift */,
 			);
 			path = EXTENSION;
 			sourceTree = "<group>";
@@ -199,6 +209,7 @@
 		D0029FE3240D497800D62A23 /* VIEW */ = {
 			isa = PBXGroup;
 			children = (
+				D045A49F2421722100250B34 /* TVCMessage */,
 				D0348CDB24201941004CC9B3 /* TVCInboxUser */,
 				D05AF6502411C4AA00F96D2E /* TVCMatchUser */,
 				D0FF5660240EEA2500039DB5 /* TVCNearbyUsers */,
@@ -237,6 +248,15 @@
 				D0348CD824201938004CC9B3 /* TVCInboxUser.xib */,
 			);
 			path = TVCInboxUser;
+			sourceTree = "<group>";
+		};
+		D045A49F2421722100250B34 /* TVCMessage */ = {
+			isa = PBXGroup;
+			children = (
+				D045A4A0242172C000250B34 /* TVCMessage.swift */,
+				D045A4A1242172C000250B34 /* TVCMessage.xib */,
+			);
+			path = TVCMessage;
 			sourceTree = "<group>";
 		};
 		D05AF6502411C4AA00F96D2E /* TVCMatchUser */ = {
@@ -366,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05AF6542411C4E700F96D2E /* TVCMatchUser.xib in Resources */,
+				D045A4A3242172C000250B34 /* TVCMessage.xib in Resources */,
 				D0029FD9240D332B00D62A23 /* LaunchScreen.storyboard in Resources */,
 				D0348CDA24201938004CC9B3 /* TVCInboxUser.xib in Resources */,
 				D0DCBFC8240E9A5100D6E201 /* Localizable.strings in Resources */,
@@ -429,13 +450,16 @@
 				D05AF64F2411B9B600F96D2E /* MatchVC.swift in Sources */,
 				D0F974C02418E4FB00CEFF2F /* CCZoomTransitionVCExtension.swift in Sources */,
 				D04838FC2411480400CA5ED9 /* Helper+UIViewController.swift in Sources */,
+				D045A4A52421778400250B34 /* Helper+UIView.swift in Sources */,
 				42470BBE240F29380083840B /* SwipeNavigationController.swift in Sources */,
 				D0DCBFCD240EA1AC00D6E201 /* NearbyVC.swift in Sources */,
 				D05AF6532411C4E700F96D2E /* TVCMatchUser.swift in Sources */,
 				D0DCBFD0240EA2C200D6E201 /* NavigationVC.swift in Sources */,
 				D073DD5E240E80A3005D85B8 /* VC3.swift in Sources */,
 				D0F974BF2418E4FB00CEFF2F /* CCSwipBackPresentationController.swift in Sources */,
+				D045A4A2242172C000250B34 /* TVCMessage.swift in Sources */,
 				D0F974BD2418E4FB00CEFF2F /* CCZoomAnimatedTransitioning.swift in Sources */,
+				D045A49E242159B200250B34 /* MessagesVC.swift in Sources */,
 				D0F974B724185BE800CEFF2F /* MatchUserVC.swift in Sources */,
 				D073DD53240E7CFF005D85B8 /* Helper+UIColor.swift in Sources */,
 				D073DD5F240E80A3005D85B8 /* VC2.swift in Sources */,

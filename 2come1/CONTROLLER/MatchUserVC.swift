@@ -217,7 +217,10 @@ class MatchUserVC: UIViewController {
     }
     
     @IBAction func btnSendMessageAction(_ sender: UIButton) {
-        UIAlertController.createCustomAlert(self, "Action", "Show SendVC", [UIAlertAction.createDefoultOkAction()])
+        guard let nvc = self.navigationController as? NavigationVC, let user = self.currentUser else {
+            return
+        }
+        nvc.showMessagesVCScreen(user: user)
     }
     
 }

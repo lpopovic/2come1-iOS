@@ -93,7 +93,7 @@ extension InboxVC: UITableViewDelegate {
             guard let nvc = self.navigationController as? NavigationVC else {
                 return
             }
-            print(currentUser)
+            nvc.showMessagesVCScreen(user: currentUser)
             
         }
     }

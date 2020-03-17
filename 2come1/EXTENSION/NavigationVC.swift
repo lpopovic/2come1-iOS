@@ -58,6 +58,12 @@ class NavigationVC: SwipeNavigationController {
         vc.currentUser = user
         self.pushViewController(vc,animated: true)
     }
+    func showMessagesVCScreen(user: String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MessagesVC") as! MessagesVC
+        vc.currentUser = user
+        self.pushViewController(vc,animated: true)
+    }
     /*
      // MARK: - Navigation
      
