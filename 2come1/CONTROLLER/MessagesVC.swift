@@ -128,9 +128,11 @@ class MessagesVC: BaseVC {
         UIAlertController.createCustomAlert(self, "Alert", "Press User Icon", [UIAlertAction.createDefoultOkAction()])
     }
     @IBAction func sendPressed(_ sender: AnyObject) {
-        
+        guard let text = self.messageTextfield.text, text.trimmingCharacters(in: .whitespacesAndNewlines).count > 0 else {
+            return
+        }
         self.messageTextfield.endEditing(true)
-        self.textArray.append(self.messageTextfield.text ?? "")
+        self.textArray.append(text)
         self.messageTextfield.text = nil
         self.messageTableView.reloadData()
         self.messageTableView.scrollToBottom()
